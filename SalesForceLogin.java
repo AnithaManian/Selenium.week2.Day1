@@ -51,7 +51,7 @@ Select drop3  = new Select(companyCountry);
 drop3.selectByVisibleText("India");
 
 driver.findElement(By.partialLinkText("Master Subscription Agreement")).click();
-			        	   
+driver.close();			        	   
 	}
 
 }

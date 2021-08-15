@@ -32,6 +32,8 @@ public class CreateLeadTestCase {
 		WebElement leadCountryCode = driver.findElement(By.id("createLeadForm_primaryPhoneCountryCode"));
 		leadCountryCode.clear();
 		leadCountryCode.sendKeys("91");
+		WebElement text = driver.findElement(By.id("createLeadForm_firstName"));
+		System.out.println("Print First Name:" +text.getAttribute("value"));
 
 		WebElement source = driver.findElement(By.id("createLeadForm_dataSourceId"));
 		Select drop1 = new Select(source);
